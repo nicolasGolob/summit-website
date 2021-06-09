@@ -4,33 +4,32 @@ import './NavBar.css';
 
 function NavBar() {
     const [click, setClick] = useState(false);
-    const handleClick = () =>{
-        setClick(!click);
-    }
+    const handleClick = () =>{setClick(!click)};
+
     return (
         <>
             <nav className='navbar'>
-                <div className='navbar-container'>
-                    <Link to="/" exact className='navbar-logo'>
+                    <Link to='/home'  exact className='navbar-logo'>
+                        <img src={require('../assets/image/logo.png').default} width="30" height="30" alt='logo'/>
                         SUMMIT 
                     </Link> 
-                    <div className='menu-hamburger' onClick={handleClick}>
+                    <ul className='nav-links'>
+                        <li className='nav-item'>
+                            <Link to='/home'  className='nav-link'>Home</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/about'  className='nav-link'>About</Link>
+                        </li>
+                        <li className='nav-item'>
+                            <Link to='/contact'  className='nav-link'>Contact</Link>
+                        </li>
+                    </ul>   
+                    <div className='hamburger-icon' onClick={handleClick}>
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
                     </div>
-                    <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-links'>
-                            <Link to='/'  className='nav-links'>Home</Link>
-                        </li>
-                        <li className='nav-links'>
-                            <Link to='/'  className='nav-links'>Story</Link>
-                        </li>
-                        <li className='nav-links'>
-                            <Link to='/'  className='nav-links'>Contact</Link>
-                        </li>
-                    </ul>
-                </div>
             </nav>
         </>
+        
     )
 }
 

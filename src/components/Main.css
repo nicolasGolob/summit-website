@@ -1,0 +1,44 @@
+
+.main-container{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: contain;
+}
+
+video{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    position: fixed;
+    z-index:-1;
+}
+
+.text-main{
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+.text-main h1{
+    font-size: 3rem;
+    padding: .3rem;
+    text-transform: uppercase;  
+    font-weight:bolder;
+    background-image: linear-gradient(to left, #8d9ad3, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.text-main p{
+    font-size: 2rem;
+    text-transform: uppercase;  
+    background-image: linear-gradient(to left, #7c8092, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+

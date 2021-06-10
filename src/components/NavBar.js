@@ -15,11 +15,11 @@ const NavBar = () => {
 	};
 
 	return (
-		<nav className="navbar">
-			<Link to='/home'  exact className='navbar-logo'>
+		<nav className='navbar'>
+			<div  className='navbar-logo'>
                 <img src={require('../assets/image/logo.png').default} width="30" height="30" alt='logo'/>
                 SUMMIT 
-            </Link> 
+            </div> 
 			<div onClick={handleClick} className="nav-icon">
                 <i className={openNav ? 'fas fa-times' : 'fas fa-bars'}/>
 			</div>

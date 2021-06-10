@@ -17,11 +17,13 @@
     justify-self: start;
     display: flex;
     align-items: center;
+	transition: 0.7s;
 }
 
 .navbar-logo:hover{
     color: rgb(245, 245, 245);
     cursor: pointer;
+	transition: 0.5s;
 }
 
 
@@ -38,11 +40,13 @@
     color: rgb(61, 61, 61);
     letter-spacing: .18rem;
     margin-right:5rem;
+	transition: 0.7s;
 }
 
 .nav-link:hover{
     color: rgb(245, 245, 245);
     cursor: pointer;
+	transition: 0.5s;
 }
 
 .nav-icon {
@@ -76,7 +80,6 @@
 	.nav-item {
 		padding: .6rem 0;
         border-bottom: 1px solid rgb(167, 167, 167);
-
 	}
 
 	.nav-icon {

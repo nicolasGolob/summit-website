@@ -1,4 +1,3 @@
-
 .main-container{
     height:100vh;
     width:100%;
@@ -18,7 +17,6 @@ video{
 
 .text-main{
     text-align: center;
-    margin: 0;
     position: relative;
 }
 
@@ -40,5 +38,15 @@ video{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+@media (max-width:768px){
+    .text-main h1{
+        font-size: 2rem;
+    }
+
+    .text-main p{
+        font-size: 1rem;
+    }
 }
 

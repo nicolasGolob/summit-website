@@ -1,8 +1,27 @@
-.cards-container{
+.cards-section{
     height:100vh;
-    width:100%;
+}
+
+h2{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    color: black;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    object-fit: contain;
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    width: 100%;
+    padding:4vh;
+}
+
+.cards__items{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+    background: #03D29F;
+    height:30px;
 }

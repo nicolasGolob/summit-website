@@ -4,20 +4,21 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    object-fit: contain;
+    position: relative;
 }
 
 video{
     object-fit: cover;
     width:100%;
-    height:100%;
-    position: fixed;
-    z-index:-1;
+    height:100vh;
 }
 
 .text-main{
     text-align: center;
-    position: relative;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .text-main h1{

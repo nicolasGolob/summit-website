@@ -3,7 +3,6 @@ import CardItem from './CardItem';
 import './Cards.css';
 
 export default function Cards() {
-
     const [activities] = useState([
         {
             id:1,
@@ -38,8 +37,7 @@ export default function Cards() {
     return (
         <section className="cards-section">
             <h2>Practice with the mountains</h2>
-                <div className="cards-container">
-                {
+                <div className="cards-container"> {
                     activities.map(item=> 
                         <CardItem   key={item.id}
                                     name={item.name}

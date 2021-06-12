@@ -5,15 +5,12 @@ export default function CardItem(props) {
     return (
         <>
             <div className="cards__items">
-                {/* as descending bem */}
-                    {/* <figure className="cards__picture" >
-                        <img src={require(`../assets/image/${props.image}`).default}  alt={''}/>     
-                    </figure>
-
+                <img className="cards__img" src={require(`../assets/image/${props.image}`).default}  alt={''}/>     
                     <div className="cards__details">
-                        <h5 className="cards__text">{props.name}</h5>
-        
-                    </div> */}
+                        <h5 className="cards__name">{props.name}</h5>
+                        <p className="cards__text">{props.text}</p>
+                        {/* <button>Read more</button> */}
+                    </div> 
             </div>     
         </>
     )

@@ -30,6 +30,8 @@ video{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 .text-main p{
@@ -39,6 +41,8 @@ video{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width:768px){

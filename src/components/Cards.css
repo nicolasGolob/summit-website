@@ -1,5 +1,6 @@
 .cards-section{
     height:100vh;
+    width: 100%;
 }
 
 h2{
@@ -23,8 +24,7 @@ h2{
     border: 1px solid #bacdd8;
     padding: 8px;
     border-radius: 12px;
-    height:45rem;
-
+    height:34rem;
 }
 
 .cards__img {

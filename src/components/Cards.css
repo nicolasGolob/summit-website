@@ -1,12 +1,15 @@
 .cards-section{
-    height:100vh;
+    height:150vh;
     width: 100%;
 }
 
-h2{
+.cards-title{
     margin-top: 3rem;
     font-size: 2.5rem;
-    color: black;
+    background-image: linear-gradient(to left, #bebebe, rgb(241, 241, 241));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     display: flex;
     justify-content: center;
 }
@@ -14,17 +17,17 @@ h2{
 .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     margin:0 auto;
     padding:4vh;
 }
 
 .cards__items{
-    background-color: white;
+    background-image: linear-gradient(to bottom, #d3d3d3, rgb(241, 241, 241));
     border: 1px solid #bacdd8;
-    padding: 8px;
-    border-radius: 12px;
-    height:34rem;
+    padding: .5rem;
+    border-radius: .75rem;
+    height:45rem;
 }
 
 .cards__img {
@@ -33,11 +36,11 @@ h2{
     height: 70%;
 }
 
-.card__details {
-padding: 1rem;
-  }
+.cards__details {
+    padding: 1rem;
+ }
 
-h5 {
+.cards__name {
     font-size: 2rem;
     margin-left: .4rem;
     font-weight: bold;
@@ -47,7 +50,7 @@ h5 {
     justify-content: left;
 }
 
-p{
+.cards__text{
     font-size: 1.5rem;
     margin-left: .4rem;
     font-weight: bold;

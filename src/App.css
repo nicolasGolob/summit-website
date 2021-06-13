@@ -9,4 +9,6 @@
   font-family: 'Sarabun', sans-serif;
 }
 
-
+html{
+  background-image: linear-gradient(to bottom, #00050c, #000711, #000815, #000a18, #000b1b);
+}

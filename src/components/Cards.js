@@ -8,7 +8,7 @@ export default function Cards() {
         {  
             id:1,
             name: "Climbing",
-            tag:"climbing",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod",
             path:"./",
             image : 'climbing.jpg'
@@ -16,7 +16,7 @@ export default function Cards() {
         {
             id:2,
             name: "Skiing",
-            tag:"ski",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod",
             path:"./",
             image : 'skiing.jpg'
@@ -24,7 +24,7 @@ export default function Cards() {
         {
             id:3,
             name: "Rafting",
-            tag:"Rafting",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod ",
             path:"./",
             image : 'rafting.jpg'
@@ -32,7 +32,7 @@ export default function Cards() {
         {
             id:4,
             name: "Chilling",
-            tag:"chilling",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod ",
             path:"./",
             image : 'chilling.jpg'
@@ -40,7 +40,7 @@ export default function Cards() {
         {
             id:5,
             name: "Parachute",
-            tag:"parachute",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod ",
             path:"./",
             image : 'parachute.jpg'
@@ -48,16 +48,15 @@ export default function Cards() {
         {
             id:6,
             name: "Hiking",
-            tag:"chilling",
+            tag:["Rafting","Water"],
             text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum autem cum eaque necessitatibus illo libero eius natus suscipit aliquid, fuga, nam earum quod ",
             path:"./",
             image : 'hiking.jpg'
         }
       ]);
-
     return (
         <section className="cards-section">
-            <h2>Practice with the mountains</h2>
+            <h2 className="cards-title">Practice with the mountains</h2>
                 <div className="cards-container"> {
                     activities.map(item=> 
                         <CardItem   key={item.id}

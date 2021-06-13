@@ -25,7 +25,7 @@ const NavBar = () => {
 			</div>
 			<ul className={openNav? 'nav-links active' : 'nav-links'}>
 				<li className="nav-item">
-					<Link to="/home"  className="nav-link" onClick={closeMobileMenu}>Home</Link>
+					<Link to="/"  className="nav-link" onClick={closeMobileMenu}>Home</Link>
 				</li>
 				<li className="nav-item">
 					<Link to="/about" className="nav-link" onClick={closeMobileMenu}>About</Link>

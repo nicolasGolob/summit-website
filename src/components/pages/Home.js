@@ -10,6 +10,7 @@ export default function Home() {
             <Main/>
             <Cards/>
             <Banner/>
+            <Contact/>
         </>
     )
 }

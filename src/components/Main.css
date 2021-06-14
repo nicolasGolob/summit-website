@@ -32,6 +32,7 @@ video{
     color: transparent;
     display: flex;
     justify-content: center;
+    letter-spacing: 5px;
 }
 
 .text-main p{
@@ -43,6 +44,7 @@ video{
     color: transparent;
     display: flex;
     justify-content: center;
+    letter-spacing: 3px;
 }
 
 @media (max-width:768px){

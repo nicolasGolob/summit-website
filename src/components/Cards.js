@@ -56,7 +56,7 @@ export default function Cards() {
       ]);
     return (
         <section className="cards-section">
-            <h2 className="cards-title">Practice with the mountains</h2>
+            <h2 className="cards-title">PRACTISE WITH THE MOUNTAINS</h2>
                 <div className="cards-container"> {
                     activities.map(item=> 
                         <CardItem   key={item.id}

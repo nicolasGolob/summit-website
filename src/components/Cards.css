@@ -12,6 +12,8 @@
     color: transparent;
     display: flex;
     justify-content: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;  
 }
 
 .cards-container{
@@ -22,7 +24,12 @@
     padding:4vh;
 }
 
-@media(max-width:698px) {
+@media(max-width:943px) {
+
+    .cards-section{
+        height:420vh;
+    }
+    
     .cards-container{
         display:flex;
         flex-wrap: wrap;

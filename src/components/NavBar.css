@@ -20,13 +20,6 @@
 	transition: 0.7s;
 }
 
-.navbar-logo:hover{
-    color: rgb(245, 245, 245);
-    cursor: pointer;
-	transition: 0.5s;
-}
-
-
 .nav-links {
 	display: grid;
     grid-template-columns: repeat(4, auto);

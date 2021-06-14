@@ -4,7 +4,6 @@ import './Cards.css';
 
 export default function Cards() {
     const [activities] = useState([
-        
         {  
             id:1,
             name: "Climbing",

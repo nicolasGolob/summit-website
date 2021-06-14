@@ -13,11 +13,37 @@
 
 .scroll-icon{
     font-size: 5rem;
-    background-image: linear-gradient(to right, #b3b3b3, rgb(207, 207, 207));
+    background-image: linear-gradient(to right, #a0a0a0, rgb(172, 172, 172));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
+@media(max-width:850px) {
+    .scroll-icon{
+        font-size: 3rem;
+    }
+}
+
+@media(max-width:508px) {
+    .scroll-to-top{
+        right:.3rem; 
+    }
+    .scroll-icon{
+        font-size: 2.5rem;
+    }  
+}
+
+@media(max-width:375px) {
+    .scroll-to-top{
+        right:-2.7rem; 
+        top: 92%;
+    }
+    .scroll-icon{
+        font-size: 2.5rem;
+    }  
+}
+
 
 
 

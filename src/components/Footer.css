@@ -89,3 +89,41 @@ footer{
 .footer-bottom i{
     font-size: 1.8rem;
 }
+
+@media(max-width:850px) {
+    .footer-content h3{
+        font-size: 2rem;
+    }
+    .footer-content p{
+        font-size: 1rem;
+    }
+    .media-icon{
+        font-size: 1.5rem;
+    }
+    .footer-bottom p{
+        font-size: .8rem;
+    }
+    
+}
+
+@media(max-width:375px) {
+
+    footer{
+        height:50vh;
+
+    }
+
+    .footer-content h3{
+        font-size: 1.5rem;
+    }
+    .footer-content p{
+        font-size: .9rem;
+    }
+    .media-icon{
+        font-size: 1.5rem;
+    }
+    .footer-bottom p{
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+}

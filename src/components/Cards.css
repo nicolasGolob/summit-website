@@ -5,7 +5,7 @@
 
 .cards-title{
     margin-top: 3rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
     background-image: linear-gradient(to left, #bebebe, rgb(241, 241, 241));
     -webkit-background-clip: text;
     background-clip: text;
@@ -21,76 +21,22 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
     margin:0 auto;
-    padding:4vh;
+    padding:4rem;
 }
 
-@media(max-width:943px) {
-
-    .cards-section{
-        height:420vh;
-    }
-    
-    .cards-container{
-        display:flex;
-        flex-wrap: wrap;
-        padding:8rem;
-        gap: 4rem;
-    }
-
-    .cards__items{
-        padding: .5rem;
-        border-radius: .75rem;
-        height:40rem;
-    }
-}
-
-@media(max-width:546px) {
-    .cards__items{
-        height:50rem;
-    }
-}
-
-@media(max-width:475px) {
-    .cards-container{   
-        padding:2rem;
-    }
-    .cards__name{
-        font-size: 1rem;
-    }
-
-    .cards__text{
-        font-size: .8rem;
-    }
-}
-
-@media(max-width:350px) {
-    .cards-title{
-        font-size: 1.8rem;
-    }
-    .cards__items{   
-        padding:2rem;
-        height:60rem;
-    }
-    .cards__name{
-        font-size: .8rem;
-    }
-    .cards__text{
-        font-size: .6rem;
-    }
-}
 
 .cards__items{
     background-image: linear-gradient(to bottom, #d3d3d3, rgb(241, 241, 241));
     border: 1px solid #bacdd8;
     padding: .5rem;
     border-radius: .75rem;
-    height:45rem;
+    height:42rem;
     transition: 0.4s;
 }
 
 .cards__items:hover{
    cursor: pointer;
-   transform: scale(1.1);
+   transform: scale(1.04);
    transition: 0.5s;
 }
 
@@ -121,4 +67,79 @@
     color: #363738;
     display: flex;
     justify-content: left;
+}
+
+@media(max-width:943px) {
+
+    .cards-section{
+        height:390vh;
+    }
+    
+    .cards-container{
+        display:flex;
+        flex-wrap: wrap;
+        padding:3rem 8rem;
+    }
+
+    .cards__items{
+        padding: .5rem;
+        border-radius: .75rem;
+        height:35rem;
+    }
+
+    .cards-title{
+        font-size:2rem;
+    }
+}
+
+
+@media(max-width:475px) {
+
+    .cards-container{
+        padding:3rem 3rem;
+    }
+
+    .cards__name{
+        font-size: 1.8rem;
+    }
+
+    .cards__text{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:423px) {
+
+    .cards-title{
+        font-size: 1.8rem;
+    }
+    .cards__items{   
+        padding:1rem;
+    }
+    .cards__name{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:375px){
+
+    .cards-section{
+        height:420vh;
+    }
+
+    .cards-title{
+        font-size: 1.5rem;
+    }
+
+    .cards__items{
+        height:39rem;
+    }
+
+    .cards__name{   
+        font-size: 1.2rem;
+    }
+    
+    .cards__text{
+        font-size: 1.2rem;
+    }
 }

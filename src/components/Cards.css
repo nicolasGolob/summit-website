@@ -26,8 +26,8 @@
 
 
 .cards__items{
-    background-image: linear-gradient(to bottom, #d3d3d3, rgb(241, 241, 241));
-    border: 1px solid #bacdd8;
+    background-image: linear-gradient(to right, #070c1a, rgb(2, 2, 26));
+    border: 1px solid #111111;
     padding: .5rem;
     border-radius: .75rem;
     height:42rem;
@@ -54,7 +54,7 @@
     font-size: 2rem;
     margin-left: .4rem;
     font-weight: bold;
-    color: #494949;
+    color: #b3b3b3;
     line-height: 150%;
     display: flex;
     justify-content: left;
@@ -64,7 +64,7 @@
     font-size: 1.5rem;
     margin-left: .4rem;
     font-weight: bold;
-    color: #363738;
+    color: #7b7c7c;
     display: flex;
     justify-content: left;
 }

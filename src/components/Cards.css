@@ -69,10 +69,10 @@
     justify-content: left;
 }
 
-@media(max-width:943px) {
+@media(max-width:943px){
 
     .cards-section{
-        height:390vh;
+        height:250vh;
     }
     
     .cards-container{
@@ -124,7 +124,7 @@
 @media(max-width:375px){
 
     .cards-section{
-        height:420vh;
+        height:275vh;
     }
 
     .cards-title{

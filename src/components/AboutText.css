@@ -45,3 +45,37 @@
     background-clip: text;
     color: transparent;
 }
+
+@media(max-width:943px){
+
+    .aboutText-container{
+        height: 90vh; 
+        display:flex;
+        flex-wrap: wrap;
+        padding:3rem;
+    }
+    .about-text p{
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width:375px){
+
+    .aboutText-container{
+        height: 80vh; 
+        gap:0;
+    }
+    
+    .about-image{
+        height:30rem;
+        width: 100%;
+    }
+
+    .about-text h2{
+        font-size: 2rem;
+    }
+
+    .about-text p{
+        font-size: 1.3rem;
+    }
+}

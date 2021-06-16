@@ -1,7 +1,7 @@
 import React from 'react';
 import AboutMain from '../AboutMain';
 import AboutText from '../AboutText';
-// import Footer from '../Footer';
+import Footer from '../Footer';
 
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
         <>
           <AboutMain/>
           <AboutText/>
-          {/* <Footer/> */}
+          <Footer/>
         </>
     )
 }

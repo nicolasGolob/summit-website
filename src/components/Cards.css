@@ -1,5 +1,5 @@
 .cards-section{
-    height:150vh;
+    height:145vh;
     width: 100%;
 }
 
@@ -23,7 +23,6 @@
     margin:0 auto;
     padding:4rem;
 }
-
 
 .cards__items{
     background-image: linear-gradient(to right, #070c1a, rgb(2, 2, 26));

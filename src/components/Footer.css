@@ -109,8 +109,7 @@ footer{
 @media(max-width:375px) {
 
     footer{
-        height:50vh;
-
+        height:35vh;
     }
 
     .footer-content h3{

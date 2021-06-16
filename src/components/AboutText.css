@@ -6,6 +6,7 @@
     height: 70vh; 
     gap: 4rem;
     padding: 3rem;
+    border-bottom: .4px solid rgba(161, 161, 161, 0.8);
 }
 
 .about-image{
@@ -17,7 +18,6 @@
     justify-content: center;
     align-self: center; 
     border-radius: 3rem;
- 
 }
 
 .about-text{
@@ -52,7 +52,6 @@
         height: 90vh; 
         display:flex;
         flex-wrap: wrap;
-        padding:3rem;
     }
     .about-text p{
         font-size: 1.3rem;
@@ -62,7 +61,7 @@
 @media(max-width:375px){
 
     .aboutText-container{
-        height: 80vh; 
+        height: 65vh; 
         gap:0;
     }
     

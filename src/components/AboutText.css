@@ -49,7 +49,7 @@
 @media(max-width:943px){
 
     .aboutText-container{
-        height: 90vh; 
+        height: 110vh; 
         display:flex;
         flex-wrap: wrap;
     }
@@ -58,15 +58,25 @@
     }
 }
 
+@media(max-width:478px){
+
+    .aboutText-container{
+        height: 120vh; 
+    }
+
+    .about-text p{
+        font-size: 1.3rem;
+    }
+}
+
 @media(max-width:375px){
 
     .aboutText-container{
-        height: 65vh; 
-        gap:0;
+        height: 110vh; 
     }
     
     .about-image{
-        height:30rem;
+        height:20rem;
         width: 100%;
     }
 
@@ -75,6 +85,6 @@
     }
 
     .about-text p{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 }

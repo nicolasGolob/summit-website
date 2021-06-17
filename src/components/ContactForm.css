@@ -108,8 +108,10 @@ textarea:hover{
 }
 
 .error::placeholder {
-  color: #ff4d4d;
-}
+  background-image: linear-gradient(to right, #ff0000, rgb(235, 0, 0));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;}
 
 .form-message {
   padding: 1rem;

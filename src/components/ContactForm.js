@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
 
-
-
 const ContactForm = () => {
   const [name, setName] = useState("");
   //we have taken the name of the variables from the model of 'email-Js'
@@ -34,10 +32,15 @@ const ContactForm = () => {
   };
 
   const messageNotSent = () =>{
-    const formMessage =  document.querySelector('.form-message');
+    const formMessage =  document.querySelector(".form-message");
     //form message will specify whether the message was sent or display an error message
-    formMessage.innerHTML = 'Please fill in the required fields correctly *';
+    formMessage.innerHTML = "Please fill in the required fields correctly *";
     formMessage.style.opacity="1";
+    document.getElementById('name').classList.add('error');
+    document.getElementById('email').classList.add('error');
+    document.getElementById('message').classList.add('error');
+
+
   }
 
   const handleSubmit = (event) => {

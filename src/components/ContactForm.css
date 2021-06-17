@@ -1,116 +1,116 @@
 .contact-container{
-    position: relative;
-    height:80rem;
-    width: 100%;
+  position: relative;
+  height:80rem;
+  width: 100%;
 }
 
 .contact-form {
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 3rem auto 0;
-    width: 55rem;
-    background-image: linear-gradient(to bottom, #020041, #090c48, #14144f, #1d1c57, #26245e);
-    border-radius: 3rem;
-    box-shadow: 0px 4px 10px rgba(97, 97, 97, 0.637);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 3rem auto 0;
+  width: 55rem;
+  background-image: linear-gradient(to bottom, #020041, #090c48, #14144f, #1d1c57, #26245e);
+  border-radius: 3rem;
+  box-shadow: 0px 4px 10px rgba(97, 97, 97, 0.637);
 }
 
 h1 {
-    text-align: center;
-    font-weight: 800;
-    font-size: 3rem;
-    padding: 3rem;
-    background-image: linear-gradient(to left, #dddddd, rgb(109, 109, 109));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+  padding: 3rem;
+  background-image: linear-gradient(to left, #dddddd, rgb(109, 109, 109));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .form-content {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) ;
-    gap:1.5rem;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr) ;
+  gap:1.5rem;
 }
 
 input, textarea {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    background: none;
-    font-size: 1.5rem;
-    border: 1px solid#575757;
-    color: #b8b8b8;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background: none;
+  font-size: 1.5rem;
+  border: 1px solid#575757;
+  color: #b8b8b8;
 }
 
 input::placeholder, textarea::placeholder {
-    color: rgb(248, 248, 248);
-    text-align: center;
+  color: rgb(248, 248, 248);
+  text-align: center;
 }
 
 input, .email-content, textarea {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 input {
-    padding: 1rem;
-    border-radius: 1rem;
-    text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: center;
 }
 
 .email-content {
-    position: relative;
+  position: relative;
 }
 
 .email-content input {
-    width: 100%;
+  width: 100%;
 }
 
 #not-email {
-    display: none;
-    position: absolute;
-    top: 4px;
-    color: #fc3838;
-    right: 0;
-    transform-origin: 50% 50%;
+  display: none;
+  position: absolute;
+  top: 4px;
+  color: #fc3838;
+  right: 0;
+  transform-origin: 50% 50%;
 }
 
 textarea {
-    resize: none;
-    padding: 2rem 0;
+  resize: none;
+  padding: 2rem 0;
 }
 
 textarea:hover{
-    text-align: center;
+  text-align: center;
 }
 .button {
-    font-size: 1.8rem;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    color: #a7a4a4;
-    border: none;
-    cursor: pointer;
-    transition: .2s;
-    width: 100%;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  color: #a7a4a4;
+  border: none;
+  cursor: pointer;
+  transition: .2s;
+  width: 100%;
 }
 
 .button:hover {
-    letter-spacing: .5rem;
-    color: rgb(255, 255, 255);
+  letter-spacing: .5rem;
+  color: rgb(255, 255, 255);
 }
 
 .error::placeholder {
-    color: #ff4d4d;
+  color: #ff4d4d;
 }
 
 .form-message {
-    margin-top: 10px;
-    padding: 12px;
-    opacity: 0;
-    transition: 0.2s ease;
-    color: black;
-    border-radius: 4px;
-    box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+  margin-top: 10px;
+  padding: 12px;
+  opacity: 0;
+  transition: 0.2s ease;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }

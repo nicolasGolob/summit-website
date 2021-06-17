@@ -3,6 +3,7 @@ import './ContactForm.css';
 
 const ContactForm = () => {
   const [name, setName] = useState("");
+  //we have taken the name of the variables from the model of 'email-Js'
   const [company, setCompany] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -10,8 +11,11 @@ const ContactForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    //a preventDefault( ) -> so that everything is well put in the states
 
     sendFeedback("***TEMPLAYE_ID***", {
+      //this is what we send to email js
+      // its like a name : name
       name,
       company,
       phone,
@@ -21,11 +25,13 @@ const ContactForm = () => {
   };
 
   const sendFeedback = (templateId, variables) => {
-
+    //the function 'sendFeedack' will send the data and it will be updated with our state
     window.emailjs
       .send("gmail", templateId, variables)
       .then((res) => {
         console.log('success !');
+        //we make an asynchronous function if it works then 'success'
+        //and we reset everything to zero
         setName("");
         setCompany("");
         setPhone("");
@@ -33,6 +39,7 @@ const ContactForm = () => {
         setMessage("");
       })
       .catch(
+        //if there is a problem we catch and display this message
         (err) =>
           document.querySelector('.form-message').innerHTML =
             "An error has occurred, please try again.")

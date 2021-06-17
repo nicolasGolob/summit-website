@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import './ContactForm.css';
 
+
+
 const ContactForm = () => {
   const [name, setName] = useState("");
   //we have taken the name of the variables from the model of 'email-Js'
@@ -9,19 +11,46 @@ const ContactForm = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const emailChecking = () =>{
+    let mail = document.getElementById('not-email');
+    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    //we check with a regex if the email address is valid
+    //first part: you can pass anything you want, second part: there is a @ third part you need a point at all costs
+    if(email.match(regex)){
+    //is this email match with the regex
+      mail.style.display = 'none'; 
+      return true;
+      //and you return us true
+    }else{
+      mail.style.display = 'block';
+      mail.style.animation = 'animationError 1s';
+      //to remove the message at some point
+      setTimeout(()=>{
+        mail.style.animation ='none';
+      }, 1000)
+      return false;
+      //with false we won't be able to go to the sendFeedBack
+    }
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     //a preventDefault( ) -> so that everything is well put in the states
+    if(name && emailChecking() && message){
+      sendFeedback("template_z9lhp9i", {
+        //this is what we send to email js
+        // its like a name : name
+        name,
+        company,
+        phone,
+        email,
+        message,
+      });
+    }
+    else{
+      console.log('error');
+    }
 
-    sendFeedback("template_z9lhp9i", {
-      //this is what we send to email js
-      // its like a name : name
-      name,
-      company,
-      phone,
-      email,
-      message,
-    });
   };
 
   const sendFeedback = (templateId, variables) => {

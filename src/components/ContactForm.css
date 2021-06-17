@@ -6,7 +6,7 @@
 
 .contact-form {
   position: absolute;
-  top:50%;
+  top:45%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 3rem auto 0;
@@ -70,7 +70,9 @@ input {
 #not-email {
   display: none;
   position: absolute;
-  top: 4px;
+  top: .7rem;
+  font-size: 2rem;
+  font-weight: 800;
   color: #fc3838;
   right: 0;
   transform-origin: 50% 50%;
@@ -113,4 +115,40 @@ textarea:hover{
   color: black;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
+}
+
+@keyframes animationError {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  10% {
+    transform: translate(-10px, 0px);
+  }
+  20% {
+    transform: translate(10px, 0px);
+  }
+  30% {
+    transform: translate(-10px, 0px);
+  }
+  40% {
+    transform: translate(10px, 0px);
+  }
+  50% {
+    transform: translate(-10px, 0px);
+  }
+  60% {
+    transform: translate(10px, 0px);
+  }
+  70% {
+    transform: translate(-10px, 0px);
+  }
+  80% {
+    transform: translate(10px, 0px);
+  }
+  90% {
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
 }

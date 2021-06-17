@@ -31,6 +31,13 @@ const ContactForm = () => {
       return false;
       //with false we won't be able to go to the sendFeedBack
     }
+  };
+
+  const messageNotSent = () =>{
+    const formMessage =  document.querySelector('.form-message');
+    //form message will specify whether the message was sent or display an error message
+    formMessage.innerHTML = 'Please fill in the required fields correctly *';
+    formMessage.style.opacity="1";
   }
 
   const handleSubmit = (event) => {
@@ -48,7 +55,7 @@ const ContactForm = () => {
       });
     }
     else{
-      console.log('error');
+      messageNotSent();
     }
 
   };

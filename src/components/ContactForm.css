@@ -73,8 +73,12 @@ input {
   top: .7rem;
   font-size: 2rem;
   font-weight: 800;
-  color: #fc3838;
-  right: 0;
+  background-image: linear-gradient(to right, #e60303, rgb(173, 2, 2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-style:italic;
+  right: 1rem;
   transform-origin: 50% 50%;
 }
 
@@ -108,11 +112,15 @@ textarea:hover{
 }
 
 .form-message {
-  margin-top: 10px;
-  padding: 12px;
+  padding: 1rem;
   opacity: 0;
   transition: 0.2s ease;
-  color: black;
+  background-image: linear-gradient(to right, #e60303, rgb(173, 2, 2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-style:italic;
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }

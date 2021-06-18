@@ -31,16 +31,29 @@ const ContactForm = () => {
     }
   };
 
-  const messageNotSent = () =>{
+  const messageNotSent = (message) =>{
     const formMessage =  document.querySelector(".form-message");
     //form message will specify whether the message was sent or display an error message
-    formMessage.innerHTML = "Please fill in the required fields correctly *";
+    formMessage.innerHTML = message;
     formMessage.style.opacity="1";
     document.getElementById('name').classList.add('error');
     document.getElementById('email').classList.add('error');
     document.getElementById('message').classList.add('error');
+  }
 
+  const successfullySent = () =>{
+    const formMessage =  document.querySelector(".form-message");
+    formMessage.innerHTML="Your message has been sent !";
+    formMessage.style.color = "rgb(26, 156, 0)";
+    formMessage.style.opacity= "1";
 
+    document.getElementById('name').classList.remove('error');
+    document.getElementById('email').classList.remove('error');
+    document.getElementById('message').classList.remove('error');
+
+    setTimeout(()=>{
+      formMessage.style.opacity ='0';
+    }, 6000)
   }
 
   const handleSubmit = (event) => {
@@ -58,7 +71,7 @@ const ContactForm = () => {
       });
     }
     else{
-      messageNotSent();
+      messageNotSent("Please fill in the required fields correctly *");
     }
 
   };
@@ -68,7 +81,7 @@ const ContactForm = () => {
     window.emailjs
       .send("gmail", templateId, variables)
       .then((res) => {
-        console.log('success !');
+        successfullySent();
         //we make an asynchronous function if it works then 'success'
         //and we reset everything to zero
         setName("");
@@ -80,8 +93,8 @@ const ContactForm = () => {
       .catch(
         //if there is a problem we catch and display this message
         (err) =>
-          document.querySelector('.form-message').innerHTML =
-            "An error has occurred, please try again.")
+         messageNotSent("An error has occurred, please try again.")
+         )
   };
 
   return (

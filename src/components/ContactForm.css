@@ -1,7 +1,8 @@
 .contact-container{
   position: relative;
-  height:80rem;
+  height:70rem;
   width: 100%;
+  border-bottom: .4px solid rgba(161, 161, 161, 0.8);
 }
 
 .contact-form {
@@ -21,7 +22,7 @@ h1 {
   font-weight: 800;
   font-size: 3rem;
   padding: 3rem;
-  background-image: linear-gradient(to left, #dddddd, rgb(109, 109, 109));
+  background-image: linear-gradient(to right, #bebebe, rgb(97, 114, 190));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -95,7 +96,7 @@ textarea:hover{
   margin-top: 1rem;
   display: flex;
   justify-content: center;
-  color: #a7a4a4;
+  color: #b1b1b1;
   border: none;
   cursor: pointer;
   transition: .2s;
@@ -162,3 +163,93 @@ textarea:hover{
     transform: translate(0px, 0px);
   }
 }
+
+@media (max-width:768px){
+  .contact-form{
+      width: 40rem;
+  }
+
+  h1{
+    font-size: 2.5rem;
+  }
+
+  input, textarea {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1.5rem;
+  }
+
+  #not-email {
+    font-size: 1rem;
+  }
+
+  .form-message{
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width:568px){
+
+  .contact-container{
+    height:51rem;
+  }
+
+  .contact-form{
+      width: 30rem;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  input, textarea {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+
+  #not-email {
+    font-size: 1rem;
+  }
+
+  .form-message{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:375px){
+
+  .contact-container{
+    height:55rem;
+  }
+
+  .contact-form{
+    width: 23rem;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  input, textarea {
+    font-size: .8rem;
+  }
+
+  .button {
+    font-size: .8rem;
+  }
+
+  #not-email {
+    font-size: .8rem;
+  }
+
+  .form-message{
+    font-size: .8rem;
+  }
+}
+

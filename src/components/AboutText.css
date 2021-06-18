@@ -88,3 +88,93 @@
         font-size: 1rem;
     }
 }
+
+/* MULTI FORMAT  */
+
+@media(max-width:360px) and (height:640px){
+    .aboutText-container{
+        height: 80vh; 
+    }
+}
+
+@media(max-width:411px) and (height:731px){
+    .aboutText-container{
+        height: 100vh; 
+    }
+    .about-image{
+        height:35rem;
+    }
+}
+
+@media(max-width:320px) and (height:568px){
+    .aboutText-container{
+        height: 100vh; 
+    }
+    .about-image{
+        height:25rem;
+    }
+}
+
+@media(max-width:375px) and (height:667px){
+    .aboutText-container{
+        height: 80vh; 
+    }
+    .about-image{
+        height:24rem;
+    }
+}
+
+@media(max-width:414px) and (height:736px){
+    .aboutText-container{
+        height: 80vh; 
+    }
+    .about-image{
+        height:24rem;
+    }
+}
+
+@media(max-width:375px) and (height:812px){
+    .aboutText-container{
+        height: 65vh; 
+    }
+    .about-image{
+        height:24rem;
+    }
+}
+
+@media(max-width:768px) and (height:1024px){
+
+    .aboutText-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutText-container{
+        height: 70vh; 
+    }
+
+    .about-image{
+        height:44rem;
+    }
+}
+
+@media(max-width:1024px) and (height:1366px){
+    
+    .aboutText-container{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aboutText-container{
+        height: 65vh; 
+    }
+
+    .about-image{
+        height:44rem;
+        width: 80%;
+    }
+}

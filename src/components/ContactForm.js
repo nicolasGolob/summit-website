@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState} from 'react';
 import './ContactForm.css';
+
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -98,7 +99,7 @@ const ContactForm = () => {
   };
 
   return (
-      <section className="contact-container"> 
+      <section className="contact-container fade-in-contact"> 
         <form className="contact-form">
         <h1>Contact Us</h1>
             <div className="form-content">

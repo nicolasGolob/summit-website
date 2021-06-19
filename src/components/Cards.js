@@ -1,8 +1,26 @@
-import React, {useState} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import CardItem from './CardItem';
 import './Cards.css';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Cards() {
+gsap.registerPlugin(ScrollTrigger);
+const cardsFadeRef = useRef(null);
+  useEffect(() => {
+    gsap.to("#cardsFade", {
+        duration: 1,
+        y: 0,
+        autoAlpha:1,
+        scrollTrigger: {
+            trigger: "#cardsFade",
+            start: "top 70%",
+            end: "bottom 80%",
+            toggleActions : "play",
+            scrub: true   
+        }
+    });
+  }, []);
     const [activities] = useState([
         {  
             id:1,
@@ -54,7 +72,7 @@ export default function Cards() {
         }
       ]);
     return (
-        <section className="cards-section">
+        <section className="cards-section" ref={cardsFadeRef} id="cardsFade">
             <h2 className="cards-title">PRACTICE WITH THE MOUNTAINS</h2>
                 <div className="cards-container"> {
                     activities.map(item=> 

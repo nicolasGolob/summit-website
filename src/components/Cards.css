@@ -1,6 +1,8 @@
 .cards-section{
     height:140vh;
     width: 100%;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .cards-title{

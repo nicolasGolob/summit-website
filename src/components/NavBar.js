@@ -16,7 +16,7 @@ const NavBar = () => {
 
 	return (
 		<nav className="navbar">
-			<div  className="navbar-logo">
+			<div  className="navbar-logo fade-in">
                 <img src={require('../assets/image/logo.png').default} width="30" height="30" alt='logo'/>
                 SUMMIT 
             </div> 
@@ -25,13 +25,13 @@ const NavBar = () => {
 			</div>
 			<ul className={openNav? 'nav-links active' : 'nav-links'}>
 				<li className="nav-item">
-					<Link to="/"  className="nav-link" onClick={closeMobileMenu}>Home</Link>
+					<Link to="/"  className="nav-link fade-in" onClick={closeMobileMenu}>Home</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/about" className="nav-link" onClick={closeMobileMenu}>About</Link>
+					<Link to="/about" className="nav-link fade-in" onClick={closeMobileMenu}>About</Link>
 				</li>
-				<li className="nav-item">
-					<Link to="/contact" className="nav-link" onClick={closeMobileMenu}>Contact</Link>
+				<li className="nav-item ">
+					<Link to="/contact" className="nav-link fade-in" onClick={closeMobileMenu}>Contact</Link>
 				</li>
 			</ul>
 		</nav>

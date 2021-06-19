@@ -56,3 +56,18 @@ video{
     }
 }
 
+/* Animation */
+.fade-in-main-title{
+    animation: fade-in-main-title 3s ease-in-out 1.3s both;
+    -webkit-animation:fade-in-main-title 3s ease-in-out 1.3s both;
+}
+
+@keyframes fade-in-main-title {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+    
+  @-webkit-keyframes fade-in-main-title {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

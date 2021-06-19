@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     background-position:bottom;
     position: relative;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .banner-content{

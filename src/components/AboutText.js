@@ -1,10 +1,28 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './AboutText.css';
-import aboutImage from '../assets/image/aboutImage.jpg'
+import aboutImage from '../assets/image/aboutImage.jpg';
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function AboutText() {
+    gsap.registerPlugin(ScrollTrigger);
+    const AboutRef = useRef(null);
+    useEffect(() => {
+        gsap.to("#aboutFade", {
+            duration: 1,
+            y: 0,
+            autoAlpha:1,
+            scrollTrigger: {
+                trigger: "#aboutFade",
+                start: "top 70%",
+                end: "bottom 80%",
+                toggleActions : "play",
+                scrub: true   
+            }
+        });
+  }, []);
     return (
-        <section className="aboutText-container">
+        <section className="aboutText-container" ref={AboutRef} id="aboutFade">
             <img src={aboutImage} alt="a person climbing a rock" className="about-image"/>
             <div className="about-text">  
                 <h2>About Us</h2>

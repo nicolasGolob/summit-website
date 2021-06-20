@@ -1,5 +1,6 @@
 import React, { useState} from 'react';
 import './ContactForm.css';
+import emailjs from 'emailjs-com';
 
 
 const ContactForm = () => {
@@ -78,10 +79,10 @@ const ContactForm = () => {
   };
 
   const sendFeedback = (templateId, variables) => {
+    const user = process.env.REACT_APP_API_KEY
     //the function 'sendFeedack' will send the data and it will be updated with our state
-    window.emailjs
-      .send("gmail", templateId, variables)
-      .then((res) => {
+    emailjs.send("gmail", templateId, variables, user)
+      .then((result) => {
         successfullySent();
         //we make an asynchronous function if it works then 'success'
         //and we reset everything to zero

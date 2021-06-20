@@ -254,8 +254,8 @@ textarea:hover{
 
 /* Animation */
 .fade-in-contact{
-  animation: fade-in-contact 1s ease-in-out 1.3s both;
-  -webkit-animation:fade-in-contact 1s ease-in-out 1.3s both;
+  animation: fade-in-contact 1.3s ease-in-out .9s both;
+  -webkit-animation:fade-in-contact 1.3s ease-in-out .9s both;
 }
 
 @keyframes fade-in-contact {

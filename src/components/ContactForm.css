@@ -12,8 +12,7 @@
   transform: translate(-50%, -50%);
   margin: 3rem auto 0;
   width: 55rem;
-  background-image: linear-gradient(to bottom, #020041, #090c48, #14144f, #1d1c57, #26245e);
-  border-radius: 3rem;
+  background-image: linear-gradient(to bottom, #01004b, #03054f, #070953, #0c0c57, #11105b);  border-radius: 3rem;
   box-shadow: 0px 4px 10px rgba(97, 97, 97, 0.637);
 }
 
@@ -40,7 +39,7 @@ input, textarea {
   align-items: center;
   background: none;
   font-size: 1.5rem;
-  border: 1px solid#575757;
+  border: 1px solid#5c5c5c;
   color: #b8b8b8;
 }
 

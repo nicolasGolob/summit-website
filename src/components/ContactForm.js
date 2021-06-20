@@ -1,7 +1,7 @@
 import React, { useState} from 'react';
 import './ContactForm.css';
 import emailjs from 'emailjs-com';
-
+import swal from 'sweetalert';
 
 const ContactForm = () => {
   const [name, setName] = useState("");
@@ -44,18 +44,12 @@ const ContactForm = () => {
   }
 
   const successfullySent = () =>{
-    const formMessage =  document.querySelector(".form-message");
-    formMessage.innerHTML="Your message has been sent !";
-    formMessage.style.color = "rgb(26, 156, 0)";
-    formMessage.style.opacity= "1";
-
-    document.getElementById('name').classList.remove('error');
-    document.getElementById('email').classList.remove('error');
-    document.getElementById('message').classList.remove('error');
-
-    setTimeout(()=>{
-      formMessage.style.opacity ='0';
-    }, 6000)
+    swal({
+      title:"Your message has been sent !",
+      text:"We will answer you as soon as possible.",
+      icon:"success",
+      button:"Close"
+    })
   }
 
   const handleSubmit = (event) => {

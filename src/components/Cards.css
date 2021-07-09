@@ -70,14 +70,46 @@
     justify-content: left;
 }
 
-
-
-@media(max-width:943px){
+@media(max-width:1440px){
 
     .cards-section{
-        height:390vh;
+        height:80vh;
     }
-    
+
+    .cards__items{
+        padding: .5rem;
+        border-radius: .75rem;
+        height:35rem;
+    }
+
+    .cards-title{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:1024px){
+
+    .cards-section{
+        height:115vh;
+    }
+
+    .cards__items{
+        padding: .5rem;
+        border-radius: .75rem;
+        height:35rem;
+    }
+
+    .cards-title{
+        font-size:2rem;
+    }
+}
+
+@media(max-width:768px){
+
+    .cards-section{
+        height:380vh;
+    }
+
     .cards-container{
         display:flex;
         flex-wrap: wrap;
@@ -95,29 +127,7 @@
     }
 }
 
-
-@media(max-width:1100px){
-
-    .cards-section{
-        height:170vh;
-    }
-}
-
-@media(max-width:944px){
-
-    .cards-section{
-        height:380vh;
-    }
-}
-
-@media(max-width:944px){
-
-    .cards-section{
-        height:300vh;
-    }
-}
-
-@media(max-width:475px) {
+@media(max-width:425px) {
 
     .cards-section{
         height:378vh;
@@ -151,10 +161,10 @@
     }
 }
 
-@media(max-width:378px){
+@media(max-width:375px){
 
     .cards-section{
-        height:325vh;
+        height:420vh;
     }
 
     .cards-title{
@@ -202,7 +212,7 @@
 
 @media(max-width:375px) and (height:667px){
     .cards-section{
-        height:400vh;
+        height:390vh;
     }
     .cards-title{
         font-size: 1.5rem;
@@ -217,13 +227,21 @@
 
 @media(max-width:414px) and (height:736px){
     .cards-section{
-        height:330vh;
+        height:320vh;
     }
     .cards-title{
         font-size: 1.5rem;
     }
 }
 
+@media(max-width:375px) and (height:812px){
+    .cards-section{
+        height:380vh;
+    }
+    .cards-title{
+        font-size: 1.5rem;
+    }
+}
 
 @media(max-width:768px) and (height:1024px){
     .cards-section{
@@ -236,7 +254,16 @@
 
 @media(max-width:1024px) and (height:1366px){
     .cards-section{
-        height:80vh;
+        height:65vh;
+    }
+    .cards-title{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:540px) and (height:720px){
+    .cards-section{
+        height:340vh;
     }
     .cards-title{
         font-size: 1.5rem;
@@ -245,7 +272,7 @@
 
 @media(max-width:280px) and (height:653px){
     .cards-section{
-        height:110vh;
+        height:405vh;
     }
     .cards-title{
         font-size: 1.5rem;

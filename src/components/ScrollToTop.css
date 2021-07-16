@@ -19,16 +19,22 @@
     color: transparent;
 }
 
-@media(max-width:850px) {
+@media(max-width:768px) {
     .scroll-icon{
         font-size: 3rem;
     }
-}
-
-@media(max-width:508px) {
     .scroll-to-top{
         right:.3rem; 
+        top: 91%;
     }
+}
+
+@media(max-width:425px) {
+    .scroll-to-top{
+        right:.3rem; 
+        top: 91.5%;
+    }
+
     .scroll-icon{
         font-size: 2.5rem;
     }  
@@ -44,8 +50,19 @@
     }  
 }
 
-/* MEDIA */
+@media(max-width:320px) {
+    .scroll-to-top{
+        right:-2.7rem; 
+        top: 94.7%;
+    }
+    .scroll-icon{
+        font-size: 1.5rem;
+    }  
+}
 
+
+/* MEDIA */
+/* 
 @media(max-width:411px) and (height:731px){
     .scroll-to-top{
         top: 94.5%;
@@ -91,6 +108,6 @@
     .scroll-icon{
         font-size: 2rem;
     }  
-}
+} */
 
 

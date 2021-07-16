@@ -48,6 +48,25 @@ video{
 }
 
 @media (max-width:768px){
+    .about-text-main{
+        top :36%;
+    }
+
+    .about-text-main h1{
+        font-size: 2.5rem;
+    }
+
+    .about-text-main p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:425px){
+    .about-text-main{
+        top :55%;
+        width: 100%;
+    }
+
     .about-text-main h1{
         font-size: 2.5rem;
     }
@@ -60,11 +79,11 @@ video{
 @media (max-width:375px){
 
     .about-text-main{
-        top: 57%;
+        top: 55%;
     }
 
     .about-text-main h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .about-text-main p{

@@ -33,6 +33,7 @@ video{
     display: flex;
     justify-content: center;
     letter-spacing: 5px;
+    width: 100%;
 }
 
 .text-main p{
@@ -49,10 +50,45 @@ video{
 
 @media (max-width:768px){
     .text-main h1{
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+        padding: .3rem 0rem;
+
+    }
+    .text-main p{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:425px){
+    .text-main h1{
+        font-size: 1.8rem;
+        padding: .3rem 0rem;
+
     }
     .text-main p{
         font-size: 1rem;
+    }
+}
+
+@media (max-width:425px){
+    .text-main h1{
+        font-size: 1.6rem;
+        padding: 0rem 0rem;
+
+    }
+    .text-main p{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width:320px){
+    .text-main h1{
+        font-size: 1.6rem;
+        padding: 0rem 0rem;
+
+    }
+    .text-main p{
+        font-size: .8rem;
     }
 }
 

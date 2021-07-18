@@ -1,5 +1,5 @@
 .cards-section{
-    height:140vh;
+    max-height:440vh;
     width: 100%;
     opacity: 0;
     visibility: hidden;

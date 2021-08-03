@@ -10,7 +10,6 @@
     opacity: 0;
     visibility: hidden;
 }
-
 .about-image{
     grid-column: 1/5;
     grid-row: 4/8;
@@ -21,7 +20,6 @@
     align-self: center; 
     border-radius: 3rem;
 }
-
 .about-text{
     grid-column: 5/-1;
     grid-row: 4/8;
@@ -30,7 +28,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .about-text h2{
     font-size: 2.5rem;
     background-image: linear-gradient(to right, #6d7cb3, rgb(241, 241, 241));
@@ -39,7 +36,6 @@
     color: transparent;
     margin-bottom: 1rem;
 }
-
 .about-text p{
     font-size: 1.6rem;
     background-image: linear-gradient(to right, #87888a, rgb(241, 241, 241));
@@ -47,9 +43,7 @@
     background-clip: text;
     color: transparent;
 }
-
 @media(max-width:943px){
-
     .aboutText-container{
         height: 110vh; 
         display:flex;
@@ -59,46 +53,35 @@
         font-size: 1.3rem;
     }
 }
-
 @media(max-width:478px){
-
     .aboutText-container{
         height: 120vh; 
     }
-
     .about-text p{
         font-size: 1.3rem;
     }
 }
-
 @media(max-width:375px){
-
     .aboutText-container{
         height: 110vh; 
     }
-    
     .about-image{
         height:20rem;
         width: 100%;
     }
-
     .about-text h2{
         font-size: 2rem;
     }
-
     .about-text p{
         font-size: 1rem;
     }
 }
-
 /* MULTI FORMAT  */
-
 @media(max-width:360px) and (height:640px){
     .aboutText-container{
         height: 80vh; 
     }
 }
-
 @media(max-width:411px) and (height:731px){
     .aboutText-container{
         height: 100vh; 
@@ -107,7 +90,6 @@
         height:35rem;
     }
 }
-
 @media(max-width:320px) and (height:568px){
     .aboutText-container{
         height: 100vh; 
@@ -116,7 +98,6 @@
         height:25rem;
     }
 }
-
 @media(max-width:375px) and (height:667px){
     .aboutText-container{
         height: 80vh; 
@@ -125,7 +106,6 @@
         height:24rem;
     }
 }
-
 @media(max-width:414px) and (height:736px){
     .aboutText-container{
         height: 80vh; 
@@ -134,7 +114,6 @@
         height:24rem;
     }
 }
-
 @media(max-width:375px) and (height:812px){
     .aboutText-container{
         height: 65vh; 
@@ -143,38 +122,30 @@
         height:24rem;
     }
 }
-
 @media(max-width:768px) and (height:1024px){
-
     .aboutText-container{
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-
     .aboutText-container{
         height: 70vh; 
     }
-
     .about-image{
         height:44rem;
     }
 }
-
 @media(max-width:1024px) and (height:1366px){
-    
     .aboutText-container{
         display:flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-
     .aboutText-container{
         height: 65vh; 
     }
-
     .about-image{
         height:44rem;
         width: 80%;

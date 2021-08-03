@@ -6,13 +6,11 @@
     flex-direction: column;
     position: relative;
 }
-
 video{
     object-fit: cover;
     width:100%;
     height:100vh;
 }
-
 .about-text-main{
     text-align: center;
     position: absolute;
@@ -20,7 +18,6 @@ video{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .about-text-main h1{
     font-size: 3rem;
     padding: .3rem;
@@ -34,7 +31,6 @@ video{
     justify-content: center;
     letter-spacing: 5px;
 }
-
 .about-text-main p{
     font-size: 1.5rem;
     text-transform: uppercase;  
@@ -46,62 +42,49 @@ video{
     justify-content: center;
     letter-spacing: 3px;
 }
-
 @media (max-width:768px){
     .about-text-main{
         top :36%;
     }
-
     .about-text-main h1{
         font-size: 2.5rem;
     }
-
     .about-text-main p{
         font-size: 1.3rem;
     }
 }
-
 @media (max-width:425px){
     .about-text-main{
         top :55%;
         width: 100%;
     }
-
     .about-text-main h1{
         font-size: 2.5rem;
     }
-
     .about-text-main p{
         font-size: 1.3rem;
     }
 }
-
 @media (max-width:375px){
-
     .about-text-main{
         top: 55%;
     }
-
     .about-text-main h1{
         font-size: 2rem;
     }
-
     .about-text-main p{
         font-size: 1.3rem;
     }
 }
-
 /* Animation */
 .fade-in-about-title{
     animation: fade-in-about-title 3s ease-in-out 1.3s both;
     -webkit-animation:fade-in-about-title 3s ease-in-out 1.3s both;
 }
-
 @keyframes fade-in-about-title {
     0% {opacity:0;}
     100% {opacity:1;}
 }
-    
   @-webkit-keyframes fade-in-about-title {
     0% {opacity:0;}
     100% {opacity:1;}

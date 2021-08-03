@@ -4,7 +4,6 @@
     opacity: 0;
     visibility: hidden;
 }
-
 .cards-title{
     margin-top: 3rem;
     font-size: 2rem;
@@ -17,7 +16,6 @@
     letter-spacing: 2px;
     text-transform: uppercase;  
 }
-
 .cards-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -25,7 +23,6 @@
     margin:0 auto;
     padding:4rem;
 }
-
 .cards__items{
     background-image: linear-gradient(to right, #070c1a, rgb(2, 2, 26));
     border: 1px solid #111111;
@@ -34,23 +31,19 @@
     height:42rem;
     transition: 0.4s;
 }
-
 .cards__items:hover{
    cursor: pointer;
    transform: scale(1.04);
    transition: 0.5s;
 }
-
 .cards__img {
     object-fit: cover;
     width: 100%;
     height: 70%;
 }
-
 .cards__details {
     padding: 1rem;
- }
-
+}
 .cards__name {
     font-size: 2rem;
     margin-left: .4rem;
@@ -60,7 +53,6 @@
     display: flex;
     justify-content: left;
 }
-
 .cards__text{
     font-size: 1.5rem;
     margin-left: .4rem;
@@ -69,27 +61,21 @@
     display: flex;
     justify-content: left;
 }
-
 @media(max-width:1440px){
-
     .cards-section{
         height:100%;
         width: 100%;
     }
-
     .cards__items{
         padding: .5rem;
         border-radius: .75rem;
         height:35rem;
     }
-
     .cards-title{
         font-size:2rem;
     }
 }
-
 @media(max-width:1024px){
-
     .cards-section{
         height:100%;
         width: 100%;
@@ -99,103 +85,77 @@
         border-radius: .75rem;
         height:35rem;
     }
-
     .cards-title{
         font-size:2rem;
     }
 }
-
 @media(max-width:768px){
-
-  
     .cards-section{
         height:100%;
         width: 100%;
     }
-
     .cards-container{
         display:flex;
         flex-wrap: wrap;
         padding:3rem 8rem;
     }
-
     .cards__items{
         padding: .5rem;
         border-radius: .75rem;
         height:35rem;
     }
-
     .cards-title{
         font-size:2rem;
     }
 }
-
 @media(max-width:425px) {
-
     .cards-section{
         height:100%;
         width: 100%;
     }
-
     .cards-container{
         padding:3rem 3rem;
     }
-
     .cards__name{
         font-size: 1.8rem;
     }
-
     .cards__text{
         font-size: 1.3rem;
     }
 }
-
 @media(max-width:375px){
-
     .cards-section{
         height:100%;
         width: 100%;
     }
-
     .cards-title{
         font-size: 1.5rem;
     }
-
     .cards__items{
         height:39rem;
     }
-
     .cards__name{   
         font-size: 1.2rem;
     }
-    
     .cards__text{
         font-size: 1.2rem;
     }
 }
-
-
 @media(max-width:320px){
-
     .cards-section{
         height:100%;
         width: 100%;
     }
-
     .cards-title{
         font-size: 1.5rem;
     }
-
     .cards__items{
         height:37rem;
     }
-
     .cards__name{   
         font-size: 1.2rem;
     }
-    
     .cards__text{
         font-size: 1.2rem;
     }
 }
-

@@ -4,7 +4,6 @@
   width: 100%;
   border-bottom: .4px solid rgba(161, 161, 161, 0.8);
 }
-
 .contact-form {
   position: absolute;
   top:45%;
@@ -15,7 +14,6 @@
   background-image: linear-gradient(to bottom, #01004b, #03054f, #070953, #0c0c57, #11105b);  border-radius: 3rem;
   box-shadow: 0px 4px 10px rgba(97, 97, 97, 0.637);
 }
-
 h1{
   text-align: center;
   font-weight: 800;
@@ -26,13 +24,11 @@ h1{
   background-clip: text;
   color: transparent;
 }
-
 .form-content {
   display: grid;
   grid-template-rows: repeat(4, 1fr) ;
   gap:1.5rem;
 }
-
 input, textarea {
   display: flex;
   justify-content: left;
@@ -42,31 +38,25 @@ input, textarea {
   border: 1px solid#5c5c5c;
   color: #b8b8b8;
 }
-
 input::placeholder, textarea::placeholder {
   color: rgb(248, 248, 248);
   text-align: center;
 }
-
 input, .email-content, textarea {
   width: 90%;
   margin: 0 auto;
 }
-
 input {
   padding: 1rem;
   border-radius: 1rem;
   text-align: center;
 }
-
 .email-content {
   position: relative;
 }
-
 .email-content input {
   width: 100%;
 }
-
 #not-email {
   display: none;
   position: absolute;
@@ -81,12 +71,10 @@ input {
   right: 1rem;
   transform-origin: 50% 50%;
 }
-
 textarea {
   resize: none;
   padding: 2rem 0;
 }
-
 textarea:hover{
   text-align: center;
 }
@@ -101,18 +89,16 @@ textarea:hover{
   transition: .2s;
   width: 100%;
 }
-
 .button:hover {
   letter-spacing: .5rem;
   color: rgb(255, 255, 255);
 }
-
 .error::placeholder {
   background-image: linear-gradient(to right, #ff0000, rgb(235, 0, 0));
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;}
-
+  color: transparent;
+}
 .form-message {
   padding: 1rem;
   opacity: 0;
@@ -126,7 +112,6 @@ textarea:hover{
   border-radius: 4px;
   box-shadow: 0 0 2px rgba(51, 51, 51, 0.3);
 }
-
 @keyframes animationError {
   0% {
     transform: translate(0px, 0px);
@@ -162,107 +147,81 @@ textarea:hover{
     transform: translate(0px, 0px);
   }
 }
-
 @media (max-width:768px){
   .contact-form{
       width: 40rem;
   }
-
   h1{
     font-size: 2.5rem;
   }
-
   input, textarea {
     font-size: 1.2rem;
   }
-
   .button {
     font-size: 1.5rem;
   }
-
   #not-email {
     font-size: 1rem;
   }
-
   .form-message{
     font-size: 1rem;
   }
-
 }
-
 @media (max-width:568px){
-
   .contact-container{
     height:51rem;
   }
-
   .contact-form{
       width: 30rem;
   }
-
   h1{
     font-size: 2rem;
   }
-
   input, textarea {
     font-size: 1rem;
   }
-
   .button {
     font-size: 1rem;
   }
-
   #not-email {
     font-size: 1rem;
   }
-
   .form-message{
     font-size: 1rem;
   }
 }
-
 @media (max-width:375px){
-
   .contact-container{
     height:55rem;
   }
-
   .contact-form{
     width: 23rem;
   }
-
   h1{
     font-size: 1.5rem;
   }
-
   input, textarea {
     font-size: .8rem;
   }
-
   .button {
     font-size: .8rem;
   }
-
   #not-email {
     font-size: .8rem;
   }
-
   .form-message{
     font-size: .8rem;
   }
 }
-
 /* Animation */
 .fade-in-contact{
   animation: fade-in-contact 1.3s ease-in-out .9s both;
   -webkit-animation:fade-in-contact 1.3s ease-in-out .9s both;
 }
-
 @keyframes fade-in-contact {
   0% {opacity:0;}
   100% {opacity:1;}
 }
-  
 @-webkit-keyframes fade-in-contact {
   0% {opacity:0;}
   100% {opacity:1;}

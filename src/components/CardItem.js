@@ -1,6 +1,4 @@
 import React from 'react';
-// import {Link} from 'react-router-dom';
-
 export default function CardItem(props) {
     return (
         <>
@@ -9,7 +7,6 @@ export default function CardItem(props) {
                     <div className="cards__details">
                         <h5 className="cards__name">{props.name}</h5>
                         <p className="cards__text">{props.text}</p>
-                        {/* <button>Read more</button> */}
                     </div> 
             </div>     
         </>

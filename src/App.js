@@ -6,7 +6,6 @@ import Home from './components/pages/Home';
 import ScrollToTop from './components/ScrollToTop';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
-
 function App() {
   return (
     <>

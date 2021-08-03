@@ -10,7 +10,6 @@ const ContactForm = () => {
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const emailChecking = () =>{
     let mail = document.getElementById('not-email');
     let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
@@ -32,7 +31,6 @@ const ContactForm = () => {
       //with false we won't be able to go to the sendFeedBack
     }
   };
-
   const messageNotSent = (message) =>{
     const formMessage =  document.querySelector(".form-message");
     //form message will specify whether the message was sent or display an error message
@@ -42,7 +40,6 @@ const ContactForm = () => {
     document.getElementById('email').classList.add('error');
     document.getElementById('message').classList.add('error');
   }
-
   const successfullySent = () =>{
     swal({
       title:"Your message has been sent !",
@@ -51,7 +48,6 @@ const ContactForm = () => {
       button:"Close"
     })
   }
-
   const handleSubmit = (event) => {
     event.preventDefault();
     //a preventDefault( ) -> so that everything is well put in the states
@@ -69,9 +65,7 @@ const ContactForm = () => {
     else{
       messageNotSent("Please fill in the required fields correctly *");
     }
-
   };
-
   const sendFeedback = (templateId, variables) => {
     const user = process.env.REACT_APP_API_KEY
     //the function 'sendFeedack' will send the data and it will be updated with our state
@@ -92,7 +86,6 @@ const ContactForm = () => {
          messageNotSent("An error has occurred, please try again.")
          )
   };
-
   return (
       <section className="contact-container fade-in-contact"> 
         <form className="contact-form">
@@ -154,5 +147,4 @@ const ContactForm = () => {
     </section>
   );
 };
-
 export default ContactForm;

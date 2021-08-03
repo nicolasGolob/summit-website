@@ -5,7 +5,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Cards() {
-    
 gsap.registerPlugin(ScrollTrigger);
 const cardsFadeRef = useRef(null);
   useEffect(() => {
@@ -22,7 +21,6 @@ const cardsFadeRef = useRef(null);
         }
     });
   }, []);
-  
     const [activities] = useState([
         {  
             id:1,
